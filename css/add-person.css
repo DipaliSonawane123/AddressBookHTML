@@ -25,7 +25,7 @@ body{
     width: 80%;
 }
 
-img {
+.logo-content > img {
     width: 50px;
     height: auto;
     padding-left: 4px;
@@ -47,3 +47,47 @@ img {
 *{
     box-sizing: border-box;
 }
+
+/* UC-2 */
+.form-content{
+    min-height: calc(100% - 80px);
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid #008CFF;
+}
+
+.content{
+    width: 50%;
+    padding: 15px 60px;
+    background: #008CFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    text-align: center;
+    font: normal normal normal 17px/23px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.push{
+    width: 30px;
+    height: auto;
+    opacity: 1;
+    margin-left: auto;
+}
+
