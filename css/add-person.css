@@ -177,3 +177,10 @@ select{
     color: #42515f;
     background-color: transparent ;
 }
+
+/* UC-4 */
+error-output{
+    font-family: Roboto;
+    font-size: 12px;
+    color: red;
+}

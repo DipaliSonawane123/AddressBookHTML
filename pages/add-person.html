@@ -41,11 +41,12 @@
             <div class="row-content">
                 <label class="label-text" for="phone">Phone Number</label>
                 <input class="input" type="text" id="phone" name="phone" placeholder="" required>
-                <error-output class="text-error" for="text"></error-output>
+                <error-output class="phone-error" for="text"></error-output>
             </div>
             <div class="row-content">
                 <label class="label-text" for="address">Address</label>
                 <input class="input-address" type="text" id="address" name="address" placeholder="" required>
+                <error-output class="add-error" for="text"></error-output>
             </div>
             <div class="row-content-select">
                 <div class="place">
@@ -76,11 +77,15 @@
                 <div class="place">
                     <label class="label-text" for="zip">Zip-Code</label>
                     <input class="input" type="text" id="zip" name="zip" placeholder="" required>
+                    <error-output class="zip-error" for="text"></error-output>
                 </div>
             </div>
     </div>
     </form>
     </div>
+    <script defer src="../js/AddressBookData.js"></script>
+    <script defer src="../js/add-person.js"></script>
+
 </body>
 
 </html>
