@@ -12,14 +12,12 @@ class AddressBookData{
 
     get phone(){ return this._phone; }
     set phone(phone){
-        let phoneRegex1 = RegExp(/^[\+]?[(]?[0-9]{3}[)]?[0-9]{3}[-\s\.]?[0-9]{6,13}$/im);
-        let phoneRegex2 = RegExp(/^[0-9]{3}[0-9]{7,11}$/im);
+        let phoneRegex1 = RegExp('^[a-zA-Z0-9_][a-zA-Z0-9_ ]{4,}$');
+        
         if( phoneRegex1.test(phone)){
             this._phone=phone;
         }
-        else if( phoneRegex2.test(phone)){
-            this._phone=phone;
-        }
+       
         else throw 'Invalid Phone Number';  
     }
 

@@ -105,3 +105,11 @@ const getInputValuesById = (id) => {
     let value = document.querySelector(id).value;
     return value;
 }
+const resetForm = () => {
+    setValue('#name','');
+    setValue('#phone','');
+    setValue('#address','');
+    setValue('#city','');
+    setValue('#state','');
+    setValue('#zip','');
+}
