@@ -184,3 +184,51 @@ error-output{
     font-size: 12px;
     color: red;
 }
+
+/* UC-5 */
+.button{
+    cursor: pointer;
+}
+
+.submit-reset{
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.submitButton{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    font: normal normal normal 17px/23px Roboto;
+    color: #FFFFFF;
+    background: #008CFF 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    border: none;
+    opacity: 1;
+    margin-left: 290px;
+}
+
+.resetButton{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    font: normal normal normal 17px/23px Roboto;
+    letter-spacing: 0px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #42515F;
+    opacity: 1;
+}
+
+.buttonParent{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
