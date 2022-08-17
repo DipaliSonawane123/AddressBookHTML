@@ -105,8 +105,11 @@ const getInputValuesById = (id) => {
     let value = document.querySelector(id).value;
     return value;
 }
+<<<<<<< HEAD
 
 //UC-9
+=======
+>>>>>>> UC9_ResetFunction
 const resetForm = () => {
     setValue('#name','');
     setValue('#phone','');
