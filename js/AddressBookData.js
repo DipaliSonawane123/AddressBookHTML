@@ -1,8 +1,9 @@
+// UC-4
 class AddressBookData{
 
     get fullname(){ return this._fullname; }
     set fullname(fullname){
-        let nameRegex = RegExp('^[A-Z]{1}[a-z]{2,}$');
+        let nameRegex = RegExp('^[A-Z_]{1}[a-zA-Z_ ]{3,}$');
         if( nameRegex.test(fullname)){
             this._fullname=fullname;
         }
@@ -12,12 +13,11 @@ class AddressBookData{
     get phone(){ return this._phone; }
     set phone(phone){
         let phoneRegex1 = RegExp(/^[\+]?[(]?[0-9]{3}[)]?[0-9]{3}[-\s\.]?[0-9]{6,13}$/im);
-        let phoneRegex3 = RegExp(/^[0-9]{3}[0-9]{7,11}$/im);
-
+        let phoneRegex2 = RegExp(/^[0-9]{3}[0-9]{7,11}$/im);
         if( phoneRegex1.test(phone)){
             this._phone=phone;
         }
-        else if( phoneRegex3.test(phone)){
+        else if( phoneRegex2.test(phone)){
             this._phone=phone;
         }
         else throw 'Invalid Phone Number';  
@@ -25,7 +25,7 @@ class AddressBookData{
 
     get address(){ return this._address; }
     set address(address){
-        let addressRegex = RegExp('[A-Z]{1}[a-z]{3,}');
+        let addressRegex = RegExp('^[a-zA-Z0-9_][a-zA-Z0-9_ ]{4,}$');
         if( addressRegex.test(address)){
             this._address=address;
         }
@@ -52,7 +52,7 @@ class AddressBookData{
     }
     
     toString(){
-        return "fullname = '"+this.fullname + ", phone = '" + this.phone + ", address ='" + this.address +
-                        ", city = '"+this.city+ ", state = '" + this.state +", zip-code = '" + this.zip; 
+        return "fullname = "+this.fullname + ", phone = " + this.phone + ", address =" + this.address +
+                        ", city = "+this.city+ ", state = " + this.state +", zip-code = " + this.zip; 
     }
 }
