@@ -81,8 +81,8 @@ const createAddressBook = () => {
     }
     addressBookData.phone = getInputValuesById('#phone');
     addressBookData.address = getInputValuesById('#address');
-    addressBookData.city = getInputValuesById('[name=city]');
-    addressBookData.state = getInputValuesById('[name=state]');
+    addressBookData.city = getInputValuesById('#city');
+    addressBookData.state = getInputValuesById('#state');
     addressBookData.zip = getInputValuesById('#zip');
     alert(addressBookData.toString());
     return addressBookData;
@@ -104,4 +104,14 @@ function createAndUpdateStorage(addressBookData){
 const getInputValuesById = (id) => {
     let value = document.querySelector(id).value;
     return value;
+}
+
+//UC-9
+const resetForm = () => {
+    setValue('#name','');
+    setValue('#phone','');
+    setValue('#address','');
+    setValue('#city','');
+    setValue('#state','');
+    setValue('#zip','');
 }
