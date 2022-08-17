@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/add-person.css">
     <title>Address Book</title>
 </head>
+
 <body>
     <!-- UC-1 -->
     <header class="header-content header">
@@ -24,10 +25,62 @@
     <div class="form-content">
         <div class="content">
             <div class="top">
-                <div class ="box">PERSON ADDRESS FORM</div>  
-                <div class ="push"><a href="/pages/add-person.html"><img src="/assets/cancel.svg" alt=""></a></div>
+                <div class="box">PERSON ADDRESS FORM</div>
+                <div class="push"><a href="/pages/add-person.html"><img src="/assets/cancel.svg" alt=""></a></div>
             </div>
         </div>
     </div>
+    <!-- UC-3 -->
+    <div class="form">
+        <form class="form1" action="#" onreset="resetForm()" onsubmit="save()">
+            <div class="row-content">
+                <label class="label-text" for="name">Full Name</label>
+                <input class="input" type="text" id="name" name="name" placeholder="Your name..." required>
+                <error-output class="text-error" for="text"></error-output>
+            </div>
+            <div class="row-content">
+                <label class="label-text" for="phone">Phone Number</label>
+                <input class="input" type="text" id="phone" name="phone" placeholder="" required>
+                <error-output class="text-error" for="text"></error-output>
+            </div>
+            <div class="row-content">
+                <label class="label-text" for="address">Address</label>
+                <input class="input-address" type="text" id="address" name="address" placeholder="" required>
+            </div>
+            <div class="row-content-select">
+                <div class="place">
+                    <label class="label-text" for="city">City</label>
+                    <select class="select" id="city" name="city">
+                        <option value="" selected disabled hidden>Select City</option>
+                        <option value="1">Bhopal</option>
+                        <option value="2">Chennai</option>
+                        <option value="3">Delhi</option>
+                        <option value="4">Kolkata</option>
+                        <option value="5">Mumbai</option>
+                        <option value="6">Pune</option>
+                    </select>
+                </div>
+
+                <div class="place">
+                    <label class="label-text" for="state">State</label>
+                    <select class="select" id="state`" name="state">
+                        <option value="" selected disabled hidden>Select State</option>
+                        <option value="1">Madhya Pradesh</option>
+                        <option value="2">Maharashtra</option>
+                        <option value="3">Delhi</option>
+                        <option value="4">West Bengal</option>
+                        <option value="5">TamilNadu</option>
+                    </select>
+                </div>
+
+                <div class="place">
+                    <label class="label-text" for="zip">Zip-Code</label>
+                    <input class="input" type="text" id="zip" name="zip" placeholder="" required>
+                </div>
+            </div>
+    </div>
+    </form>
+    </div>
 </body>
+
 </html>
