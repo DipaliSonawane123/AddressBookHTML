@@ -81,8 +81,8 @@ const createAddressBook = () => {
     }
     addressBookData.phone = getInputValuesById('#phone');
     addressBookData.address = getInputValuesById('#address');
-    addressBookData.city = getInputValuesById('#city');
-    addressBookData.state = getInputValuesById('#state');
+    addressBookData.city = getInputValuesById('[name=city]');
+    addressBookData.state = getInputValuesById('[name=state]');
     addressBookData.zip = getInputValuesById('#zip');
     alert(addressBookData.toString());
     return addressBookData;
@@ -105,11 +105,6 @@ const getInputValuesById = (id) => {
     let value = document.querySelector(id).value;
     return value;
 }
-<<<<<<< HEAD
-
-//UC-9
-=======
->>>>>>> UC9_ResetFunction
 const resetForm = () => {
     setValue('#name','');
     setValue('#phone','');
